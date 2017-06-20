@@ -1,2 +1,2 @@
 PROG = server
-include ../examples.mk
+include ../examples_ARMv5.mk

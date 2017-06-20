@@ -3,10 +3,12 @@ CFLAGS = -g -W -Wall -Werror -I../.. -Wno-unused-function $(CFLAGS_EXTRA) $(MODU
 
 all: $(PROG)
 
+CC = /opt/armv5-marvell-linux-uclibcgnueabi-soft_i686/bin/arm-marvell-linux-uclibcgnueabi-gcc
+
 ifeq ($(OS), Windows_NT)
 # TODO(alashkin): enable SSL in Windows
 CFLAGS += -lws2_32
-CC = gcc
+#CC = gcc
 else
 CFLAGS += -pthread
 endif
